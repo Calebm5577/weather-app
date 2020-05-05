@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=B, initial-scale=1.0">
+    <title>Weather-App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div class="app-wrap">
+        <header>
+            <input type="text" id="city" placeholder="search for a city" class="search">
+            <input type="text" id="zip" placeholder="search for a zip" class="search">
+
+        </header>
+        <main>
+                <div class="buttons">
+                    <button id="first">Submit</button>
+                    <button id="second">Submit</button>
+                    <button onclick="switchSearch();switchType();" id="switch">Switch to zip</button>
+                </div>
+            <section class="location">
+                <div class="area-city"></div>
+                <div class="date"></div>
+            </section>
+
+                <div class="current">
+                    <div class="temp"></div>
+                    <div class="weather"></div>
+                    <div class="range"><span id="low"></span> / <span id="high"></span> </div>  
+                </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
